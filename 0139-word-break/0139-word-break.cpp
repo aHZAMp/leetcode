@@ -81,10 +81,12 @@ public:
             t=t+s[i];
             if(obj->search(t)){
                 //t="";
-            res|=ways(i+1,n,s,obj,dp);
+                if(ways(i+1,n,s,obj,dp))
+                    return dp[ind]=true;
+           // res|=ways(i+1,n,s,obj,dp);
             }
         }
-        return dp[ind]=res;
+        return dp[ind]=false;
         
     }
     bool wordBreak(string s, vector<string>& wordDict) {
