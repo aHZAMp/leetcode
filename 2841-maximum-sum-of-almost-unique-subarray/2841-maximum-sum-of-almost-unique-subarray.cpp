@@ -5,7 +5,7 @@ public:
         long long maxi=0;
         int i=0,j=0;
         long long sum=0;
-        map<int,int>M;
+        unordered_map<int,int>M;
         while(j<nums.size())
         {
             sum+=nums[j];
