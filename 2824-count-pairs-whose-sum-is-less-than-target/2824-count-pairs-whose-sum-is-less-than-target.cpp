@@ -17,8 +17,8 @@ public:
         {
             if(nums[i]+nums[j]<target)
             {
-                c++;
-                c+=j-1-i;
+            
+                c+=j-i;
                 i++;
             }
             else
